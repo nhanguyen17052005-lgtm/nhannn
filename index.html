@@ -1,64 +1,141 @@
-Create a professional construction company website similar to thảo.vn.
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>cô thảo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-Website type: Construction / Design & Build company
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+header {
+    background: #0b4da2;
+    color: white;
+}
+.top-bar {
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    background: white;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0 40px;
+}
+nav li {
+    margin-right: 25px;
+}
+nav a {
+    text-decoration: none;
+    color: #0b4da2;
+    font-weight: bold;
+}
+.hero {
+    background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover;
+    color: white;
+    padding: 120px 40px;
+}
+.hero h1 {
+    font-size: 48px;
+}
+.btn {
+    background: #0b4da2;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+section {
+    padding: 60px 40px;
+}
+.services, .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+footer {
+    background: #222;
+    color: #ccc;
+    padding: 40px;
+}
+footer p {
+    margin: 5px 0;
+}
+</style>
+</head>
 
-Layout structure:
-- Top header with company logo and hotline
-- Main navigation menu:
-  Home
-  About Us
-  Services
-  Projects
-  News
-  Contact
+<body>
 
-Homepage sections:
-1. Full-width hero banner with construction background
-   - Big bold title
-   - Short description
-   - Call-to-action button "Liên hệ tư vấn bé thảo
+<header>
+    <div class="top-bar">
+        <div>côthảo</div>
+        <div>Hotline: 0900 000 000</div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Dự án</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+</header>
 
-2. About company section
-   - Company introduction
-   - Vision & mission
-   - Years of experience
+<div class="hero">
+    <h1>TỔNG THẦU XÂY DỰNG NHÀ XƯỞNG</h1>
+    <p>Giải pháp Design & Build chuyên nghiệp</p>
+    <a class="btn" href="#">Liên hệ tư vấn</a>
+</div>
 
-3. Services section
-   - Design & Build
-   - Factory & Warehouse Construction
-   - Steel Structure Construction
-   - Project Management
+<section>
+    <h2>Về chúng tôi</h2>
+    <p>Chúng tôi là đơn vị tổng thầu thiết kế & thi công nhà xưởng, nhà máy công nghiệp với nhiều năm kinh nghiệm.</p>
+</section>
 
-4. Projects section
-   - Grid layout project thumbnails
-   - Project name + short description
+<section>
+    <h2>Dịch vụ</h2>
+    <div class="services">
+        <div class="card">Design & Build</div>
+        <div class="card">Thi công nhà xưởng</div>
+        <div class="card">Kết cấu thép</div>
+        <div class="card">Quản lý dự án</div>
+    </div>
+</section>
 
-5. Why choose us section
-   - Experience
-   - Quality
-   - Professional team
-   - On-time delivery
+<section>
+    <h2>Dự án tiêu biểu</h2>
+    <div class="projects">
+        <div class="card">Dự án nhà máy A</div>
+        <div class="card">Dự án nhà xưởng B</div>
+        <div class="card">Kho logistics C</div>
+    </div>
+</section>
 
-6. Contact section
-   - Contact form
-   - Phone, email, address
-   - Google map embed
+<section>
+    <h2>Liên hệ</h2>
+    <p>Email:cothao.vn</p>
+    <p>Địa chỉ: TP.HCM</p>
+</section>
 
-Footer:
-- Company information
-- Quick links
-- Copyright
+<footer>
+    <p>© 2026 VTCONS. All rights reserved.</p>
+</footer>
 
-Style:
-- Professional construction style
-- Blue & white color palette
-- Clean layout
-- Modern typography
-- Responsive for mobile
-- SEO-friendly HTML
-
-Technology:
-- HTML
-- CSS
-- JavaScript
-Language: Vietnamese
+</body>
+</html>
